@@ -88,7 +88,7 @@ export default function Layout({ children, lang }) {
             </a>
           </div>
 
-          <div className="flex flex-col md:flex-row gap-2 w-full">
+          <div className="flex flex-col md:flex-row gap-4 w-full">
             <a
               className="flex items-center gap-2 mx-auto lg:ml-0"
               href="https://github.com/upraisertech/ChainNetList"
