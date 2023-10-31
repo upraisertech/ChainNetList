@@ -134,7 +134,7 @@ const AdvertiserCta = ({ ad, small = false }) => {
           data-cy="ctaText"
           className={`${
             small ? "text-sm px-2 py-1" : "px-4 py-2"
-          } border dark:border-[#171717] border-[#EAEAEA] text-center rounded-[50px] dark:text-[#2F80ED] text-[#2F80ED] dark:hover:text-black hover:text-white dark:hover:bg-[#2F80ED] hover:bg-[#2F80ED] truncate`}
+          } border dark:border-[#171717] border-[#EAEAEA] text-center rounded-[50px] dark:text-[#dc484887] text-[#dc484887] dark:hover:text-black hover:text-white dark:hover:bg-[#dc484887] hover:bg-[#dc484887] truncate`}
         >
           {ad.ctaText}
         </div>

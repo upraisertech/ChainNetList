@@ -6,6 +6,7 @@ import { formatAddress, getProvider, useDebounce } from "../../utils";
 import { walletIcons } from "../../constants/walletIcons";
 import useConnect from "../../hooks/useConnect";
 import useAccount from "../../hooks/useAccount";
+import Switch from 'react-switch';
 
 function Header({ lang, chainName }) {
   const t = useTranslations("Common", lang);
@@ -61,9 +62,9 @@ function Header({ lang, chainName }) {
   return (
     <div className="sticky top-0 z-50 rounded-[10px] dark:bg-[#181818] bg-[#f3f3f3] p-5 -m-5">
       <header className="flex items-end gap-2 w-full sticky top-4 shadow rounded-[10px] z-50">
-        <div className="flex flex-col dark:bg-[#0D0D0D] bg-white rounded-[10px] flex-1">
-          <div className="rounded-t-[10px] shadow-sm">
-            <label className="flex sm:items-center flex-col sm:flex-row focus-within:ring-2 dark:ring-[#2F80ED] ring-[#2F80ED] rounded-t-[10px]">
+        <div className="flex flex-col-reverse dark:bg-[#0D0D0D] bg-white rounded-[10px] flex-1">
+          <div className="rounded-b-[10px] shadow-sm">
+            <label className="flex sm:items-center flex-col sm:flex-row focus-within:ring-2 dark:ring-[#dc484887] ring-[#dc484887] rounded-b-[10px]">
               <span className="font-bold text-sm dark:text-[#B3B3B3] text-black whitespace-nowrap px-3 pt-4 sm:pt-0">
                 {t("search-networks")}
               </span>
@@ -90,24 +91,34 @@ function Header({ lang, chainName }) {
             </label>
           </div>
           <div className="dark:text-[#B3B3B3] text-black py-2 px-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-            <label className="flex items-center gap-2">
-              <input type="checkbox" name="testnets" checked={includeTestnets} onChange={toggleTestnets} />
-              <span>Include Testnets</span>
-            </label>
+            <div></div>
+            <div className="flex items-center gap-6">
+              <label title="Include Testnets" className="flex items-center">
+                <Switch
+                  onChange={toggleTestnets}
+                  checked={includeTestnets}
+                  id="testnets-switch"
+                  onColor="#dc4848"
+                  offColor="#ccc" // Change the off color as needed
+                />
+                {/* <span>Include Testnets</span> */}
+              </label>
 
-            <button
-              className="flex gap-2 items-center dark:bg-[#212121] bg-[#DEDEDE] justify-center rounded-[10px] py-[8px] px-8 font-medium dark:text-[#B3B3B3] text-black"
-              onClick={connectWallet}
-            >
-              {address ? (
-                <>
-                  <img src={walletIcons[getProvider()]} width={20} height={20} alt="" />
-                  <span>{formatAddress(address)}</span>
-                </>
-              ) : (
-                t("connect-wallet")
-              )}
-            </button>
+              <button
+                className="flex gap-2 items-center dark:bg-[#dc484887] bg-[#dc484887] justify-center rounded-[10px] py-[8px] px-8 font-medium dark:text-[#B3B3B3] text-white border dark:hover:text-white hover:text-[#dc484887] dark:hover:bg-black hover:bg-white"
+                onClick={connectWallet}
+              >
+                {address ? (
+                  <>
+                    <img src={walletIcons[getProvider()]} width={20} height={20} alt="" />
+                    <span>{formatAddress(address)}</span>
+                  </>
+                ) : (
+                  t("connect-wallet")
+                )}
+              </button>
+            </div>
+
           </div>
         </div>
       </header>
