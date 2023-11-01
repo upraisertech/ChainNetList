@@ -88,7 +88,7 @@ export default function Chain({ chain, buttonOnly, lang }) {
         </table>
 
         <button
-          className="border dark:border-[#171717] border-[#EAEAEA] px-4 py-2 rounded-[50px] mb-auto dark:text-[#2F80ED] text-[#dc484887] dark:hover:text-black hover:text-white dark:hover:bg-[#dc484887] hover:bg-[#dc484887] w-fit mx-auto"
+          className="border dark:border-[#171717] border-[#EAEAEA] px-4 py-2 rounded-[50px] mb-auto dark:text-[#dc484887] text-[#dc484887] dark:hover:text-white hover:text-white dark:hover:bg-[#dc484887] hover:bg-[#dc484887] w-fit mx-auto"
           onClick={() => addToNetwork({ address, chain })}
         >
           {t(renderProviderText(address))}
