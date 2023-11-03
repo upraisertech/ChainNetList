@@ -50,7 +50,7 @@ export default function Layout({ children, lang }) {
 
           <div className="flex flex-col gap-4 w-full">
             <a
-              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] font-medium py-3 px-6 shadow-lg w-full dark:bg-[#dc484887] bg-[#dc484887] text-white"
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] font-medium py-3 px-2 shadow-lg w-full dark:bg-[#dc484887] bg-[#dc484887] text-white w-full"
               href="https://github.com/ethereum-lists/chains"
               target="_blank"
               rel="noopener noreferrer"
@@ -69,7 +69,7 @@ export default function Layout({ children, lang }) {
             </a>
 
             <a
-              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] font-medium py-[12px] px-6 w-full dark:bg-[#0D0D0D] bg-white dark:text-[#dc484887] text-[#dc484887] border dark:border-[#171717] border-[#EAEAEA]"
+              className="flex items-center justify-center mx-auto lg:ml-0 gap-2 rounded-[50px] font-medium py-[12px] px-2 dark:bg-[#0D0D0D] bg-white dark:text-[#dc484887] text-[#dc484887] border dark:border-[#171717] border-[#EAEAEA] w-full"
               href="https://github.com/upraisertech/ChainNetList/blob/main/constants/extraRpcs.js"
               target="_blank"
               rel="noopener noreferrer"
@@ -90,7 +90,7 @@ export default function Layout({ children, lang }) {
 
           <div className="flex flex-col md:flex-row gap-5 w-full">
             <a
-              className="flex items-center gap-2 mx-auto lg:ml-0"
+              className="flex items-center gap-2 mx-auto lg:ml-0 w-full"
               href="https://github.com/upraisertech/ChainNetList"
               target="_blank"
               rel="noopener noreferrer"
@@ -104,7 +104,7 @@ export default function Layout({ children, lang }) {
               <span className="text-base font-medium">{t("view-source-code")}</span>
             </a>
 
-            <a className="flex items-center gap-2 mx-auto lg:ml-0" href="#" onClick={toggleTheme} id="theme-toggle">
+            <a className="flex items-center gap-2 mx-auto lg:ml-0 w-full" href="#" onClick={toggleTheme} id="theme-toggle">
               <svg
                 id="theme-toggle-dark-icon"
                 className="w-5 h-5 hidden"

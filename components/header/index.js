@@ -105,7 +105,7 @@ function Header({ lang, chainName }) {
               </label>
 
               <button
-                className="flex gap-2 items-center dark:bg-[#dc484887] bg-[#dc484887] justify-center rounded-[10px] py-[8px] px-8 font-medium dark:text-[#B3B3B3] text-white border dark:hover:text-white hover:text-[#dc484887] dark:hover:bg-black hover:bg-white"
+                className="flex gap-2 items-center dark:bg-[#dc484887] bg-[#dc484887] justify-center rounded-[10px] py-[8px] px-2 font-medium dark:text-[#B3B3B3] text-white border dark:hover:text-white hover:text-[#dc484887] dark:hover:bg-black hover:bg-white w-full"
                 onClick={connectWallet}
               >
                 {address ? (
