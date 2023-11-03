@@ -24,8 +24,8 @@ If the RPC has none of the above and you still think it should be added, please 
 Your RPC should always be added at the end of the array.
 
 <img src="https://upraisertech.vercel.app/assets/proj-112.0f4644ad.png"/>
-https://upraisertech.vercel.app/assets/proj-112.0f4644ad.png
-
+Preveiw - https://upraisertech.vercel.app/assets/proj-112.0f4644ad.png
+Live Link - https://chainnetlist.vercel.app/
 <!-- 
 <img src="https://upraisertech.vercel.app/assets/proj-112.0f4644ad.png"/>
 https://upraisertech.vercel.app/assets/proj-11.0f4644ad.png -->
